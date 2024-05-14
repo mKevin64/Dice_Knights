@@ -1,30 +1,25 @@
-### NOTES ###
-    #Make player as a class with stats (hp, attack dice, def dice, etc.)
-        #Make Player Classes (Knight, Warrior, Wizard, etc.)
-            #MAKE THE PLAYER CLASSES AS SUBCLASSES OF Player_Object
-                #make the warrior class and test that with the dice roller before trying to fix the dice roller, since the values will change between the warrior and the knight
-                    #ok so the dice roller can work with the different classes, now to make the defence dice roller.
-    #Make Dice Roller
-        #Start with just player attack dice then work on defence dice
-            # Ok so the dice roller *is* working, but it's not perfect yet. will fix it later. need to make it add exploded dice to the list properly *and* not go into an infinite loop
-                #fix the dice exploding issue later
-
 
 ### TO DO LIST ###
     #Make the other character classes (Wizard, Monk, Rogue)
-        #Add their defence stats as well
+        #Add their defence stats as well -- DONE
             #Added def stats for Knight and Warrior, should finish up by adding the other classes later
-    #Refactor and split i up so each like thing is in it's own .py file
+    #Refactor and split it up so each like thing is in it's own .py file
         #keep player dice rolls in one file, enemy dice rolls in another, player classes in one, enemy classes in another etc.
+            #still mostly WIP but getting close to having that done, need to make the core combat loop into it's own file
     #Make and XP and Leveling system
         #enemy xp should be static while the rewards should be dynamic
-            #scale stuff based off player level?
+            #scale stuff based off player level -- YES
+                #need to make the enemy stats and other stuff scale based on player level
     #Make Item shop to spend gold at
         #start with a health potion, an attack enhancement item, and a defence enhancement item
-
-### THIS IS A TEST COMMENT SO I CAN FIGURE OUT HOW GITHUB AND GITKRAKEN WORK
-
-### THIS IS ANOTHER TEST COMMENT BECAUSE I CLONED THE REPO LOCALLY AND NOW WANNA TRY TO MERGE THIS COMMENT BACK INTO THE MAIN ONE ON GITHUB
+            #got the shop to work so now i need to add random item generation
+                #make sure that items generated are class specific (knight and warrior get swords, wizard gets wands, etc.)
+                #still not sure how i want to balance the weapons and leveling system, will think about it and work on it later once i have a better idea of what i want to do
+    #Make Player Inventory
+        #make it so only one weapon and armor can be equipped at a time
+            #needs to remove previous item if any and then add in the new item
+    #Make more enemies
+        #make a few different enemy type, finally put the poor TestGoblin out of its misery
 
 import sys
 from termcolor import cprint

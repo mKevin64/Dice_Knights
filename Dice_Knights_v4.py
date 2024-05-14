@@ -22,7 +22,7 @@
     #Make Item shop to spend gold at
         #start with a health potion, an attack enhancement item, and a defence enhancement item
 
-
+### THIS IS A TEST COMMENT SO I CAN FIGURE OUT HOW GITHUB AND GITKRAKEN WORK
 
 import sys
 from termcolor import cprint

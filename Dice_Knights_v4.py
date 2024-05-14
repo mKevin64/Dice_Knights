@@ -3,21 +3,30 @@
     #Make the other character classes (Wizard, Monk, Rogue)
         #Add their defence stats as well -- DONE
             #Added def stats for Knight and Warrior, should finish up by adding the other classes later
+            
+    #Add more player stats
+        #Dice should not be able to explode infinitely, should put a cap on them that can be raised with items or leveling
+            #may have to rework part of the dice roller to do so
+            
     #Refactor and split it up so each like thing is in it's own .py file
         #keep player dice rolls in one file, enemy dice rolls in another, player classes in one, enemy classes in another etc.
             #still mostly WIP but getting close to having that done, need to make the core combat loop into it's own file
+            
     #Make and XP and Leveling system
         #enemy xp should be static while the rewards should be dynamic
             #scale stuff based off player level -- YES
                 #need to make the enemy stats and other stuff scale based on player level
+                
     #Make Item shop to spend gold at
         #start with a health potion, an attack enhancement item, and a defence enhancement item
             #got the shop to work so now i need to add random item generation
                 #make sure that items generated are class specific (knight and warrior get swords, wizard gets wands, etc.)
-                #still not sure how i want to balance the weapons and leveling system, will think about it and work on it later once i have a better idea of what i want to do
+                    #still not sure how i want to balance the weapons and leveling system, will think about it and work on it later once i have a better idea of what i want to do
+                    
     #Make Player Inventory
         #make it so only one weapon and armor can be equipped at a time
             #needs to remove previous item if any and then add in the new item
+            
     #Make more enemies
         #make a few different enemy type, finally put the poor TestGoblin out of its misery
 

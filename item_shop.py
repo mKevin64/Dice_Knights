@@ -62,9 +62,8 @@ class Armor(ItemObject):
 class ShopKeeper():
     def __init__(self, item_list):
         self.item_list = item_list
+    def open_shop(Potion, Weapon, Armor):
         item_list = []
-    def open_shop(item_list, Potion, Weapon, Armor):
-            
         item_list.append(Potion.item_type)
         item_list.append(Weapon.item_type)
         item_list.append(Armor.item_type)

@@ -12,7 +12,7 @@ def calc_enemy_damage(PlayerObject, EnemyObject):
     
     if player_atk_rolls_total > enemy_def_rolls_total:
         EnemyObject.enemy_dmg = player_atk_rolls_total - enemy_def_rolls_total
-        cprint(f"The enemy has taken {EnemyObject.enemy_dmg} points of damage!", 'light_magenta')
+        cprint(f"The enemy has taken {EnemyObject.enemy_dmg} points of damage!", "light_red")
         return EnemyObject.enemy_dmg
     elif player_atk_rolls_total <= enemy_def_rolls_total:
         EnemyObject.enemy_dmg = 0
@@ -26,11 +26,11 @@ def calc_player_damage(PlayerObject, EnemyObject):
     
     if enemy_atk_rolls_total > player_def_rolls_total:
         PlayerObject.player_dmg = enemy_atk_rolls_total - player_def_rolls_total
-        cprint(f"The player has taken {PlayerObject.player_dmg} points of damage!", "light_magenta")
+        cprint(f"The player has taken {PlayerObject.player_dmg} points of damage!", "light_red")
         return PlayerObject.player_dmg
     elif enemy_atk_rolls_total <= player_def_rolls_total:
         PlayerObject.player_dmg = 0
-        cprint(f"The player has taken no damage!", 'light_magenta')
+        #cprint(f"The player has taken no damage!", 'light_magenta')
         return PlayerObject.player_dmg
     
 

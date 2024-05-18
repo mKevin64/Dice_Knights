@@ -1,5 +1,5 @@
 class PlayerObject:
-    def __init__(self, player_class, player_max_health, player_gold, player_hitpoints, player_xp, player_dmg, atk_dice_min, atk_dice_max, atk_dice, atk_dice_keep, atk_explode_value, player_atk_rolls, Debug, player_exploded_atk_dice, player_atk_rolls_total, def_dice_min, def_dice_max, def_dice, def_explode_value, def_dice_keep, player_def_rolls, player_exploded_def_dice, player_def_rolls_total):
+    def __init__(self, player_class, player_max_health, player_gold, player_hitpoints, player_xp, player_max_explode, player_dmg, atk_dice_min, atk_dice_max, atk_dice, atk_dice_keep, atk_explode_value, player_atk_rolls, Debug, player_exploded_atk_dice, player_atk_rolls_total, def_dice_min, def_dice_max, def_dice, def_explode_value, def_dice_keep, player_def_rolls, player_exploded_def_dice, player_def_rolls_total):
         
         self.player_class = player_class #player's class
         self.player_hitpoints = player_hitpoints #how many hitpoints they have
@@ -16,6 +16,7 @@ class PlayerObject:
         self.player_atk_rolls = player_atk_rolls #the list of what the player rolled
         self.player_exploded_atk_dice = player_exploded_atk_dice #the list of the exploded atk rolls
         self.player_atk_rolls_total = player_atk_rolls_total #sum of the list of the atk roll
+        self.player_max_explode = player_max_explode
         
         #setting def dice values
         self.def_dice_min = def_dice_min

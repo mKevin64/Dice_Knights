@@ -26,17 +26,18 @@ from dice_roller import *
 from calcs import *
 from item_shop import *
 from printer import *
+from intro import *
 
 
 def main():
-    
-    print("Please Select Your Class")
-    player_class = input()
-    class_selection(player_class)
-    #cprint(PlayerObject.Debug, "light_magenta")
-    EnemySelect(enemy_type="TestGoblin")
+    PlayerObject
+    EnemyObject
     
     while True:
+        introduction()
+        class_selection(class_info())
+        cprint(PlayerObject.Debug, "light_magenta")
+        EnemySelect(enemy_type="TestGoblin")
         while PlayerObject.player_hitpoints > 0:
             
             if PlayerObject.player_hitpoints > 0:

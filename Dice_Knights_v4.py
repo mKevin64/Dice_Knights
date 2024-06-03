@@ -1,9 +1,9 @@
 
 ### TO DO LIST ###
 ### PRIORITIZE ITEMS HIGHER UP ###
-    #Finish making character classes
-    #Make Character Class Selector better (info about classes, make sure of player choice, etc.)
-    #Add intro screen that has how to play, general info, etc.
+    #Finish making character classes - DONE
+    #Make Character Class Selector better (info about classes, make sure of player choice, etc.) - DONE
+    #Add intro screen that has how to play, general info, etc. - DONE
     #Make Leveling System
     #Add more enemies
     #Add more items

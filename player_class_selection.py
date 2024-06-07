@@ -148,6 +148,7 @@ def class_selection(player_class):
         PlayerObject.player_max_health = 25
         PlayerObject.player_max_explode = 4
         
+        PlayerObject.atk_dice = 4
         PlayerObject.atk_dice_min = 1
         PlayerObject.atk_dice_max = 6
         PlayerObject.atk_dice_keep = 3
